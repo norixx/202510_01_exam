@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+/* リセット --- 全要素の余白・ボックスモデル設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* clearfix - フロート解除用クラス */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* デスクトップのスタイル */
+
+/* body要素 - 背景色設定 */
+body {
+    background-color: #f8f8f8;
+}
+
+/* コンテナ - div要素 - 白背景・中央レイアウト・角丸 */
+.container {
+    width: 680px;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+/* サイトタイトル - h1要素 */
+h1 {
+    font-size: 1.5em;
+    padding: 1em;
+    margin: 0;
+}
+
+/* ナビゲーション - nav要素 背景色 */
+nav {
+    background-color: #efefef;
+}
+
+/* ナビ - ul要素(.gnav-list) マーカー消し・中央 */
+.gnav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* ナビ - li要素 横並び・文字サイズ・余白 */
+.gnav-list li {
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 0 0.5em;
+}
+
+/* ナビリンク - a要素 装飾・余白・色 */
+.gnav-list li a {
+    display: block;
+    text-decoration: none;
+    color: #888;
+    padding: 0.5em 1em;
+}
+
+/* ナビリンク - ホバー時 背景・色変更 */
+.gnav-list li a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* ナビ英語部分 - 太字 */
+.gnav-list a {
+    font-weight: 700;
+}
+
+/* ナビ日本語 - 改行表示 */
+.gnav-list li span {
+    display: block;
+}
+
+/* メインエリアの余白設定 */
+main {
+    padding: 2em 2em 0;
+}
+
+/* サイト紹介 about - 下余白 */
+.about {
+    margin-bottom: 40px;
+}
+
+/* 画像 - 左寄せ・サイズ・余白設定 */
+.about img {
+    float: left;
+    width: 300px;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/* 紹介文の文字行間 */
+.about p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* guideセクション枠 下余白 */
+.guide {
+    margin-bottom: 40px;
+}
+
+/* guide-list - 区切り罫線・余白 */
+.guide-list {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* guide-list - 最後の項目のみ 区切り線なし */
+.guide-list:last-child {
+    border-bottom: none;
+}
+
+/* guide-listリンク - 横並び・装飾・アニメ */
+.guide-list a {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* guide-listリンク - ホバー時透明度 */
+.guide-list a:hover {
+    opacity: 0.7;
+}
+
+/* guideアイコン領域 幅設定 */
+.guide-icon {
+    flex-basis: 25%;
+}
+
+.guide-icon img {
+    width: 100%;
+}
+
+/* guideテキスト領域 幅設定 */
+.guide-text {
+    flex-basis: 70%;
+}
+
+.guide-text p {
+    margin: 0;
+}
+
+/* フッター中央・余白・文字サイズ・色 */
+footer {
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer small {
+    font-size: 0.75em;
+    color: #888;
+}
+
+/* モバイルのスタイル
+   メディアクエリで700px以下用 */
+@media screen and (max-width: 700px) {
+
+    /* コンテナ幅変更 */
+    .container {
+        width: 340px;
+    }
+
+    /* タイトル文字サイズ縮小 */
+    h1 {
+        font-size: 1.1em;
+    }
+
+    /* ナビ li余白なし */
+    .gnav-list li {
+        margin: 0;
+    }
+
+    /* 紹介画像フロート解除・最大幅 */
+    .about img {
+        float: none;
+        max-width: 100%;
+    }
+
+    /* guideタイトル文字サイズ・余白 */
+    .guide-text h3 {
+        font-size: 1.1em;
+        margin: 0 auto 0.5em;
+    }
+}

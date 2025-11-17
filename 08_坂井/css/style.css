@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body{
+    background-color: #f8f8f8;
+}
+.container{
+    width: 680px;
+    background-color: #fff;
+    padding: 40px auto;
+    border-radius: 8px;
+}
+
+h1{
+    font-size: 24px;
+    padding: 1em;
+    margin: 0;
+}
+
+nav{
+    background-color: #efefef;
+}
+
+.gnav-list{
+    list-style: none;
+    padding: 0 ;
+    margin: 0;
+    text-align: center;
+    
+} 
+
+li {
+display: inline-block;
+    font-size: 0.8em;
+    margin: 0 0.5;
+ }
+    
+a{
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}

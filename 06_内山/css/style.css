@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+body {
+    background-color: #f8f8f8;
+}
+
+div.container {
+    width: 680px;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+header.h1 {
+    font-size: 150%;
+    padding: 1em;
+    margin: 0;
+}
+
+nav {
+    background-color: #efefef;
+    align-items: center;
+}
+
+ul.gnav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 700;
+}
+
+ul.gnav-list.li {
+    list-style: inline-block;
+    font-size: 80%;
+    margin: 0 0.5em;
+}
+
+ul.gnav-list a {
+    display: block;
+    text-decoration: none;
+    color: #888;
+    padding: 0.5em 1em;
+}
+
+ul.gnav-list li a span {
+    font-size: 12px;
+    display: block;
+}
+
+ul.gnav-list.a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+ul.gnav-list.a::first-line {
+    font-weight: 700;
+}
+
+main {
+    padding: 2em 2em 0 2em;
+}
+
+div.about {
+    margin: auto auto 40px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both; /* floatsを解除 */
+}
+
+.about img {
+    width: 300px;
+    margin: auto 1.5em 1.5em auto;
+    float: left;
+}
+
+.about p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+section.guide {
+    margin: auto auto 40px;
+    display: block;
+}
+
+section.guide-list {
+    padding: auto auto 20px;
+    margin: auto auto 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+section {
+    border: none;
+}
+
+.guide-list a {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.guide-list:last-child {
+    border-bottom: none;
+    /*border: none;*/
+}
+
+.guide a:hover {
+    clear: 70%;
+}
+
+div.guide-icon {
+    flex-basis: 25%;
+}
+
+.guide-icon img {
+    width: 100%;
+    vertical-align: baseline;
+}
+
+.guide-text {
+    flex-basis: 70%;
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer small {
+    font-size: 75%;
+    color: #888;
+}
+
+@media screen and (max-width:700px) {
+
+    div.container {
+        width: 340px;
+    }
+
+    h1 {
+        font-size: 110%
+    }
+
+   .gnav-list li {
+       margin: 0; 
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+
+    .guide-text h3 {
+        font-size: 110%;
+        margin: 0 0 0.5em 0;
+    }
+
+}

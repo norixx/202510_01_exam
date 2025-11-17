@@ -1,0 +1,153 @@
+@charset 'UTF-8';
+
+body {
+    background: #f8f8f8;
+}
+
+.container {
+    width: 680px;
+    background: #fff;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding: 1em;
+    margin: 0;
+}
+
+nav {
+    background: #efefef;
+}
+
+.gnav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.gnav-list li {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 0 0.5em;
+}
+
+.gnav-list li a {
+    display: block;
+    text-decoration: none;
+    color: #888;
+    padding: 0.5em 1em;
+}
+
+.gnav-list li a:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.gnav-list li a span {
+    font-weight: 700;
+}
+
+main {
+    padding: 2em 2em 0;
+}
+
+.about {
+    margin-bottom: 40px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about img {
+    float: left;
+    width: 300px;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.about p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.guide {
+    margin-bottom: 40px;
+}
+
+.guide-list {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.guide-list:last-child {
+    border-bottom: none
+}
+
+.guide-list a {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.guide-list a:hover {
+    opacity: 0.7;
+}
+
+.guide-icon {
+    flex-basis: 25%;
+}
+
+.guide-icon img {
+    width: 100%;
+}
+
+.guide-text {
+    flex-basis: 70%;
+}
+
+.guide-text p {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+}
+
+small {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 340px;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    .gnav-list li {
+        margin: 0;
+    }
+
+    .about img {
+        float: none;
+        width: 100%;
+    }
+
+    .guide-text h3 {
+        font-size: 1.1rem;
+        margin: 0 0 0.5em;
+    }
+}
