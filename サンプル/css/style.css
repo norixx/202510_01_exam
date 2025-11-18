@@ -31,7 +31,7 @@ nav {
 .gnav-list li {
   display: inline-block;
   font-size: 0.8em;
-  margin: 0 0.3em;
+  margin: 0 0.5em;
 }
 
 .gnav-list li a {
@@ -72,7 +72,7 @@ main {
 }
 
 .about p {
-  padding: 0;
+  margin: 0;
   line-height: 1.5;
 }
 
