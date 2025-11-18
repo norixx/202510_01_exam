@@ -93,7 +93,7 @@ main {
     border-bottom: 1px solid #ccc;
 }
 
-section:last-child {
+.guide-list:last-child {
     border-bottom: none;
 }
 
